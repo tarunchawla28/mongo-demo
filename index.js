@@ -13,9 +13,9 @@ const courseSchema = new mongoose.Schema({
 const Course = mongoose.model('Course', courseSchema);
 async function createCourse() {
     const course = new Course({
-        name: 'Angular',
+        name: 'Node',
         author: 'Tarun Chawla',
-        tags: ['angular', 'frontend'],
+        tags: ['node', 'backend'],
         isPublished: true
     })
 
@@ -66,5 +66,6 @@ async function getCourses() {
 //         .select({ name: 1, tags: 1 });
 //     console.log(courses);
 // }
+//createCourse();
 getCourses();
 //createCourse();
