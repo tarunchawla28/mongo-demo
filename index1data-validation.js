@@ -35,7 +35,7 @@ const courseSchema = new mongoose.Schema({
             },
             message: 'A course should have at least one tag'
         }
-    },
+    }, 
     date: { type: Date, default: Date.now },
     isPublished: Boolean,
     price: {
